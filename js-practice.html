@@ -92,12 +92,40 @@ console.log(makeBetterName("Donald", "F", "Trump"));
 
 function whoWon (home, away) {
   if (home > away)
-  let message= "the home team won"
+  let message= "the home team won";
   return message;
 }
   else {
+    let message="the away team won"
   return "the away team won";
   }
+console.log(message)
+//if the away time wins
+function winningTeam (home, away) {
+  if (away > home)
+  let message= "the home team lost";
+  return message;
+
+  else {
+    let message="the away team won";
+    return message;
+  }
+}
+console.log(message)
+
+ //if it's a tie
+ if (away === home) {
+   return "the result is a tie!";
+ }
+ else if (away==="4") {
+   if (home === "2") {
+     return "the away team wins" ;
+   }
+   else { 
+     return "the home team wins" ;
+   }
+ }
+
 
 
 
